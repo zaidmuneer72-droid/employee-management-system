@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Any other CSS can stay below these */
+*{
+    color: #fff;
+}
+body{
+    background-color: #111;
+}
+#tasklist::-webkit-scrollbar{
+display: none;
+}
