@@ -41,12 +41,12 @@ const FailedTask = ({ data, employeeId, taskIndex }) => {
   }
 
   return (
-        <div className=' flex-shrink-0 h-full w-[300px] p-5 bg-red-400 rounded-xl  '>
+        <div className='flex-shrink-0 min-h-[260px] w-[85vw] sm:w-[320px] p-4 sm:p-5 bg-red-400 rounded-xl'>
           <div className='flex justify-between items-center'>
-            <h3 className='bg-red-600 px-3 py-1 rounded text-sm'> {data.category}</h3>
+            <h3 className='bg-red-600 px-3 py-1 rounded text-xs sm:text-sm'> {data.category}</h3>
             <h4 className='text-sm'>{data.taskDate}</h4>
           </div>
-          <h2 className='text-2xl font-semibold mt-5'>{data.taskTitle}</h2>
+          <h2 className='text-xl sm:text-2xl font-semibold mt-4 sm:mt-5'>{data.taskTitle}</h2>
           <p className='text-sm mt-2'>{data.taskDescription}
             
           </p>

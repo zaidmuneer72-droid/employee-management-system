@@ -19,25 +19,25 @@ const TaskListNumbers = ({ data }) => {
     )
 
     return (
-        <div className='flex mt-10 justify-between gap-5 screen'>
-            <div className='rounded-xl w-[25%] py-6 px-9 bg-blue-400'>
-                <h2 className='text-3xl font-bold'>{counts.newTask}</h2>
-                <h3 className='text-xl mt-0.5 font-medium'>New Task</h3>
+        <div className='mt-6 sm:mt-8 lg:mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5'>
+            <div className='rounded-xl py-5 sm:py-6 px-6 sm:px-9 bg-blue-400'>
+                <h2 className='text-2xl sm:text-3xl font-bold'>{counts.newTask}</h2>
+                <h3 className='text-lg sm:text-xl mt-0.5 font-medium'>New Task</h3>
             </div>
 
-            <div className='rounded-xl w-[25%] py-6 px-9 bg-emerald-500'>
-                <h2 className='text-3xl font-bold'>{counts.completed}</h2>
-                <h3 className='text-xl mt-0.5 font-medium'>Completed Task</h3>
+            <div className='rounded-xl py-5 sm:py-6 px-6 sm:px-9 bg-emerald-500'>
+                <h2 className='text-2xl sm:text-3xl font-bold'>{counts.completed}</h2>
+                <h3 className='text-lg sm:text-xl mt-0.5 font-medium'>Completed Task</h3>
             </div>
 
-            <div className='rounded-xl w-[25%] py-6 px-9 bg-yellow-400'>
-                <h2 className='text-3xl font-bold text-white'>{counts.active}</h2>
-                <h3 className='text-xl mt-0.5 font-medium text-white'>Accepted Task</h3>
+            <div className='rounded-xl py-5 sm:py-6 px-6 sm:px-9 bg-yellow-400'>
+                <h2 className='text-2xl sm:text-3xl font-bold text-white'>{counts.active}</h2>
+                <h3 className='text-lg sm:text-xl mt-0.5 font-medium text-white'>Accepted Task</h3>
             </div>
 
-            <div className='rounded-xl w-[25%] py-6 px-9 bg-red-400'>
-                <h2 className='text-3xl font-bold'>{counts.failed}</h2>
-                <h3 className='text-xl mt-0.5 font-medium'>Failed Task</h3>
+            <div className='rounded-xl py-5 sm:py-6 px-6 sm:px-9 bg-red-400'>
+                <h2 className='text-2xl sm:text-3xl font-bold'>{counts.failed}</h2>
+                <h3 className='text-lg sm:text-xl mt-0.5 font-medium'>Failed Task</h3>
             </div>
         </div>
     )
